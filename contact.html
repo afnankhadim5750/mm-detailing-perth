@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — M&amp;M Detailing Perth</title>
+<meta name="description" content="Contact M&M Detailing Perth in Ellenbrook, WA. Call 0405 212 013 or email mmdetailingperth@gmail.com for a fast detailing quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="concept">Design concept</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">M&amp;M <em>Detailing</em></a>
+    <nav class="nav-links" id="site-nav">
+      <a class="page" href="index.html">Home</a>
+      <a class="page" href="services.html">Services</a>
+      <a class="page" href="gallery.html">Gallery</a>
+      <a class="page active" href="contact.html">Contact</a>
+      <a class="btn small" href="tel:+61405212013">Get a Quote</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Contact</span>
+    <h1>Let's talk <span class="accent">about your car</span></h1>
+    <p>One quick call or email — tell us what your car needs and we'll sort the rest.</p>
+  </div>
+</div>
+
+<section class="sec" style="padding-top:70px">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="c-main">
+        <span class="kicker">Get a quote</span>
+        <h2>Fast quotes, <span class="accent">no mucking around</span></h2>
+        <p class="sub">Most quotes given on the spot. Most bookings confirmed same day.</p>
+        <a class="big-phone" href="tel:+61405212013">0405 212 013</a><br>
+        <a class="mail-link" href="mailto:mmdetailingperth@gmail.com">mmdetailingperth@gmail.com</a>
+        <div class="hours">
+          <div><span>Monday – Saturday</span><span>8:00 AM – 5:00 PM</span></div>
+          <div><span>Sunday</span><span>Closed</span></div>
+        </div>
+      </div>
+      <div class="c-side">
+        <h3><i class="bi bi-geo-alt"></i>Find us</h3>
+        <p><strong style="color:#fff">Ellenbrook, Perth WA</strong></p>
+        <p>Serving Aveley, Henley Brook, The Vines, Brabham, Dayton and Bellevue.</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=M%26M+Detailing+Perth+Ellenbrook+WA" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div>
+      <h2>Stop driving a dirty car</h2>
+      <p>One call — and it comes back looking better than the day you bought it.</p>
+    </div>
+    <a class="btn light" href="tel:+61405212013">Call 0405 212 013</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="fbrand">M&amp;M Detailing Perth</div>
+      <p>Ellenbrook, Perth WA — meticulous car detailing: hand washes, interior deep cleans, paint correction and ceramic coating.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-contact">
+      <h4>Get a quote</h4>
+      <a href="tel:+61405212013">0405 212 013</a>
+      <a href="mailto:mmdetailingperth@gmail.com">mmdetailingperth@gmail.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=M%26M+Detailing+Perth+Ellenbrook+WA" target="_blank" rel="noopener">Ellenbrook, Perth WA</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 M&amp;M Detailing Perth</span>
+    <span class="red">Concept website design</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var nav=document.querySelector('nav.nav-links');
+  if(!btn||!nav){return}
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+    var icon=btn.querySelector('i');
+    if(icon){icon.classList.toggle('bi-list',!open);icon.classList.toggle('bi-x',open)}
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — M&amp;M Detailing Perth</title>
+<meta name="description" content="The M&M Detailing Perth standard: gloss paint, detailed wheels, reset interiors and machine polishing in Ellenbrook, WA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="concept">Design concept</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">M&amp;M <em>Detailing</em></a>
+    <nav class="nav-links" id="site-nav">
+      <a class="page" href="index.html">Home</a>
+      <a class="page" href="services.html">Services</a>
+      <a class="page active" href="gallery.html">Gallery</a>
+      <a class="page" href="contact.html">Contact</a>
+      <a class="btn small" href="tel:+61405212013">Get a Quote</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Gallery</span>
+    <h1>The proof is in <span class="accent">the paint</span></h1>
+    <p>This is the standard every car leaves with — gloss you can see from across the car park.</p>
+  </div>
+</div>
+
+<section class="sec" style="padding-top:70px">
+  <div class="wrap">
+
+    <div class="g-item g-feature">
+      <div class="g-idx"><span>01</span></div>
+      <img src="images/hero.webp" alt="Glossy detailed black car">
+      <div class="g-cap">Mirror gloss, sealed &amp; protected</div>
+    </div>
+
+    <div class="g-pair">
+      <div class="g-item">
+        <div class="g-idx"><span>02</span></div>
+        <img src="images/polishing.webp" alt="Machine polishing in progress">
+        <div class="g-cap">Machine polishing in progress</div>
+      </div>
+      <div class="g-item">
+        <div class="g-idx"><span>03</span></div>
+        <img src="images/wheel.webp" alt="Detailed alloy wheel">
+        <div class="g-cap">Wheels, tyres &amp; barrels detailed</div>
+      </div>
+    </div>
+
+    <div class="g-item g-feature">
+      <div class="g-idx"><span>04</span></div>
+      <img src="images/interior.webp" alt="Detailed car interior">
+      <div class="g-cap">Interior reset — like new</div>
+    </div>
+
+    <p class="fineprint" style="margin-top:44px">Illustrative imagery for this design concept — final gallery to feature real M&amp;M Detailing Perth work.</p>
+
+    <div class="svc-cta"><a class="btn" href="tel:+61405212013">Book your detail</a></div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div>
+      <h2>Want yours looking like this?</h2>
+      <p>One call — and it comes back looking better than the day you bought it.</p>
+    </div>
+    <a class="btn light" href="tel:+61405212013">Call 0405 212 013</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="fbrand">M&amp;M Detailing Perth</div>
+      <p>Ellenbrook, Perth WA — meticulous car detailing: hand washes, interior deep cleans, paint correction and ceramic coating.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-contact">
+      <h4>Get a quote</h4>
+      <a href="tel:+61405212013">0405 212 013</a>
+      <a href="mailto:mmdetailingperth@gmail.com">mmdetailingperth@gmail.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=M%26M+Detailing+Perth+Ellenbrook+WA" target="_blank" rel="noopener">Ellenbrook, Perth WA</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 M&amp;M Detailing Perth</span>
+    <span class="red">Concept website design</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var nav=document.querySelector('nav.nav-links');
+  if(!btn||!nav){return}
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+    var icon=btn.querySelector('i');
+    if(icon){icon.classList.toggle('bi-list',!open);icon.classList.toggle('bi-x',open)}
+  });
+})();
+</script>
+</body>
+</html>
